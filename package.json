@@ -1,0 +1,12 @@
+{
+  "name": "server1",
+  "version": "1.0.0",
+  "description": "Backend code for duo meet video calling application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mohit Raj",
+  "license": "ISC"
+}

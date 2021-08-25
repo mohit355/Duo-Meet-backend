@@ -15,13 +15,13 @@ const server = http.createServer(app);
 const routes = require("./app/routes");
 
 mongoose
-  .connect(process.env.DATABASE, {
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
-    useCreateIndex: true,
+    // useCreateIndex: true,
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("Local DB connected");
+    console.log("Atlas DB connected");
   })
   .catch((err) => {
     console.log("error in connecting with local DB ", err);

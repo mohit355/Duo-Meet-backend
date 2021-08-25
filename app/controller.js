@@ -13,7 +13,6 @@ exports.meetById = (req, res, next, meetId) => {
 };
 
 exports.saveCallId = (req, res) => {
-  console.log(req.body);
   const streamData = new MeetId(req.body);
   streamData.save((err, stream) => {
     if (err) {
